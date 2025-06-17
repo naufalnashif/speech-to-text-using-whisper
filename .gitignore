@@ -1,0 +1,52 @@
+# MacOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Output files
+output_transkrip/
+
+transkrip_output*.txt
+transkrip_output*.vtt
+
+# VSCode/IDE settings
+.vscode/
+.idea/
+
+# System files
+*.swp
+*~
+
+# Test/coverage
+.coverage
+.tox/
+htmlcov/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore environment/config files (optional)
+.env
+.env.*
+
+# Optional cache
+.cache/
