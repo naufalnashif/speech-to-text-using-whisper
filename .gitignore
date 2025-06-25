@@ -13,6 +13,11 @@ dist/
 build/
 *.log
 
+assets/
+temp_chunk_46.wav
+.txt
+.vtt
+
 # Virtual environment
 .venv/
 env/
