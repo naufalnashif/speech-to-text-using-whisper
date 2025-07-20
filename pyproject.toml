@@ -1,0 +1,37 @@
+[project]
+name = "speech-to-text-using-whisper"
+version = "0.1.0"
+description = "A Streamlit app for audio transcription using Whisper models"
+authors = [
+    { name = "Naufal Nashif Imanuddin", email = "naufal@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+    "streamlit",
+    "openai-whisper",
+    "torch",
+    "numpy",
+    "pandas",
+    "soundfile",
+    "pydub",
+    "ffmpeg-python",
+    "python-multipart",
+    "scipy",
+]
+
+[tool.setuptools]
+packages = ["your_module_if_any"]  # atau kosongkan jika hanya script
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
