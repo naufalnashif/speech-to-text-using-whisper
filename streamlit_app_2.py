@@ -145,12 +145,11 @@ if uploaded_file:
             update_log_display()
 
     with col2:
-        # Tampilkan tombol Stop/Lanjutkan hanya saat transcribing aktif
-        if st.session_state.transcribing:
-            stop_label = "🛑 Stop" if not st.session_state.stop else "▶️ Lanjutkan"
-            if st.button(stop_label):
-                st.session_state.stop = not st.session_state.stop
-                write_log("User stopped transcription." if st.session_state.stop else "User resumed transcription.")
+        # Tampilkan tombol Stop hanya saat transkripsi sedang berjalan dan belum dihentikan
+        if st.session_state.transcribing and not st.session_state.stop:
+            if st.button("🛑 Stop"):
+                st.session_state.stop = True
+                write_log("User stopped transcription.")
                 update_log_display()
 
     audio_hash = compute_audio_hash(trimmed_audio)
