@@ -1,0 +1,10 @@
+[theme]
+base = "dark"
+primaryColor = "#00BFFF"                    # DeepSkyBlue: fresh and calm
+backgroundColor = "#0D1117"                 # Dark grayish navy (less strain)
+secondaryBackgroundColor = "#161B22"        # Slightly lighter for containers
+textColor = "#E6EDF3"                       # Slight off-white for comfort
+font = "sans serif"
+
+[server]
+maxUploadSize = 500

@@ -1,8 +1,6 @@
 streamlit
 openai-whisper
-torch
-transformers
-sentencepiece
-tinytag
-python-docx
-fpdf2
+whisper
+pydub
+tqdm
+psutil
