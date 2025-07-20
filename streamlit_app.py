@@ -122,7 +122,7 @@ with st.sidebar:
 # --- Main Page ---
 st.title("🎧 Whisper Audio Transcriber")
 
-uploaded_file = st.file_uploader("Upload audio file", type=["mp3", "wav", "m4a"], key="uploaded_file")
+uploaded_file = st.file_uploader("Upload audio file", type=["mp3", "wav", "m4a", "mp4"], key="uploaded_file")
 
 if uploaded_file:
     st.audio(uploaded_file, format="audio/wav")
