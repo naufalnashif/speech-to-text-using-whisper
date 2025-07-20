@@ -13,7 +13,7 @@ dist/
 build/
 *.log
 
-assets/
+# assets/
 temp_chunk_46.wav
 .txt
 .vtt
